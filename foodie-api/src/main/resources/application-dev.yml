@@ -7,8 +7,10 @@ spring:
     password: 123456
   redis:
     # Redis的单机单实例
+    # 使用docker启动redis
+    # docker run -d --rm -p 6379:6379 --name red_srv -v /usr/local/redis/data:/data -v /usr/local/redis/redis.conf:/etc/redis/redis.conf redis redis-server /etc/redis/redis.conf
     database: 1
-    host: 192.168.198.128
+    host: 39.96.14.175
     port: 6379
     password: 123456
     # Redis 哨兵模式
