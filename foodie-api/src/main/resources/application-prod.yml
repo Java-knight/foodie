@@ -1,0 +1,7 @@
+server:
+  port: 80
+
+spring:
+  datasource:                                 #数据源相关配置, 在下面的URL中localhost填写的是 内网ip
+    url: jdbc:mysql://localhost:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect
+    password: 123456
